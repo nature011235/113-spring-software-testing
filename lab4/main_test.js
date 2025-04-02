@@ -32,7 +32,6 @@ const puppeteer = require('puppeteer');
         // 尋找包含ElementHandle的部分
         for (let i = 0; i < sections.length; i++) {
             if (sections[i].textContent.includes('ElementHandle')) {
-                console.log(`找到包含ElementHandle的部分: "${sections[i].textContent}"`);
                 
                 // 獲取這個部分的父元素
                 const sectionParent = sections[i].parentElement;
